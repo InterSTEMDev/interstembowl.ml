@@ -1,9 +1,10 @@
-import React from "react"
+import React  from "react"
+import { LayoutContainer } from "./containers/layout"
 
 function App() {
   return (
     <>
-      <p>Hello World</p>
+      <LayoutContainer/> 
     </>
   )
 }
