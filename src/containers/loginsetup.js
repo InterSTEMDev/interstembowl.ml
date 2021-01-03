@@ -5,8 +5,6 @@ import firebase from "firebase"
 import { LoggedIn } from "./loggedin"
 
 
-
-
 export function LoginSetupContainer() {
 
     var currentUser = ''; 
@@ -107,7 +105,7 @@ export function LoginSetupContainer() {
     if (user) {
         return (
             <>
-                          <LoggedIn username={currentUser} handleLogout={handleLogout}/>
+               <LoggedIn username={currentUser} handleLogout={handleLogout}/>
             </>
         )
     }

@@ -10,8 +10,6 @@ export function LoggedIn (props) {
     const [email, setEmail] = useState(''); 
 
     useEffect(() => {
- 
-    
         firebase.auth().onAuthStateChanged(function(user){
                 firebase.database().ref('users/' + user.uid).on('value', snapshot => {
                     setUsername(snapshot.val().username);
