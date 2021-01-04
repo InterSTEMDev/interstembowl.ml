@@ -7,6 +7,7 @@ import {MathFirstFrame} from "../firstframe/math"
 import {RootFirstFrame} from "../firstframe/root"
 import {PhysicsFirstFrame} from "../firstframe/physics" 
 import {LoginFirstFrame} from "../firstframe/login" 
+import logo from "../images/logo.png";
 
 export class LayoutContainer extends React.Component {
     constructor() {
@@ -23,7 +24,8 @@ export class LayoutContainer extends React.Component {
             <div className="l-container">
                     <header className="header">
                     <div className="header__title">
-                        <h1 style={{fontSize: "50px"}}>InterSTEM Bowl & POTD</h1>
+                        <img src={logo} />
+                        <h1 style={{fontSize: "50px"}}><span>Inter</span><span style={{color:"#f57f93"}}>STEM</span> Bowl & POTD</h1>
                     </div>
                 </header>
                 <nav>
@@ -47,8 +49,8 @@ export class LayoutContainer extends React.Component {
 
                 <footer className="c-footer">
                     <div className="c-footer__links">
-                        <a href="https://www.instagram.com/cyberstartusa/" target="_blank" className="h-link-emphasis-light">Instagram</a>
-                        <a href="https://twitter.com/cyberstartusa" target="_blank" className="h-link-emphasis-light">Twitter</a>
+                        <a href="https://www.instagram.com/inter.stem/" target="_blank" className="h-link-emphasis-light">Instagram</a>
+                        <a href="https://discord.com/invite/Y9KSFVZ" target="_blank" className="h-link-emphasis-light">Discord</a>
                     </div>
                     <div className="c-footer__copyright">
                         Developed by InterSTEM Tech Team.
