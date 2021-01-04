@@ -43,6 +43,25 @@ body{
 	color: black !important; 
 }
 
+pre {
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	text-align: justify;
+  }
+
+td, th {
+	
+	text-align: left;
+	padding: 8px;
+	font-family: 'Giga Sans Light';
+  }
+
+  table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+  }
+
 a{
 	color:#3084c0;
 	text-decoration:none;

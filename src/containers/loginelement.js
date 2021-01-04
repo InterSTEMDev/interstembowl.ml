@@ -54,6 +54,21 @@ export function LoginElementContainer(props) {
              )}
 
                 <br></br><br></br>
+
+                <LoginElement.ButtonContainer width="100%" >
+                    <div className="btnContainer">
+
+                                <button className="authButton" onClick={handleLogin}>Sign In</button>
+                                <p className="errorMsg">{emailError}</p>
+                                <p className="errorMsg">{passwordError}</p>
+                     
+                        
+
+
+                    </div>
+                </LoginElement.ButtonContainer>
+
+                {/* 
                 <LoginElement.ButtonContainer width="100%" >
                     <div className="btnContainer">
                         {!hasAccount ? (
@@ -75,6 +90,7 @@ export function LoginElementContainer(props) {
                         )}
                     </div>
                 </LoginElement.ButtonContainer>
+                        */} 
                 
         </>
     )
