@@ -25,7 +25,7 @@ export class LayoutContainer extends React.Component {
                     <header className="header">
                     <div className="header__title">
                         <img src={logo} />
-                        <h1 style={{fontSize: "50px"}}><span>Inter</span><span style={{color:"#f57f93"}}>STEM</span> Bowl & POTD</h1>
+                        <h1 style={{fontSize: "50px"}}><span>Inter</span><span style={{color:"#f57f93"}}>STEM</span> Bowl</h1>
                     </div>
                 </header>
                 <nav>
@@ -49,10 +49,10 @@ export class LayoutContainer extends React.Component {
 
                 <footer className="c-footer">
                     <div className="c-footer__links">
-                        <a href="https://www.instagram.com/inter.stem/" target="_blank" className="h-link-emphasis-light">Instagram</a>
-                        <a href="https://discord.com/invite/Y9KSFVZ" target="_blank" className="h-link-emphasis-light">Discord</a>
+                        <a href="https://www.instagram.com/inter.stem/" target="_blank" className="footerText">Instagram</a>
+                        <a href="https://discord.com/invite/Y9KSFVZ" target="_blank" className="footerText">Discord</a>
                     </div>
-                    <div className="c-footer__copyright">
+                    <div className="c-footer__copyright footerText">
                         Developed by InterSTEM Tech Team.
                     </div>
                     </footer>

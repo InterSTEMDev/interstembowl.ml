@@ -38,6 +38,11 @@ body{
 			background-size:1000px
 	}
 }
+
+.footerText {
+	color: black !important; 
+}
+
 a{
 	color:#3084c0;
 	text-decoration:none;
