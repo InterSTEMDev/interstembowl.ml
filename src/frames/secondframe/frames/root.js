@@ -70,7 +70,7 @@ export default class RootSecondFrame extends React.Component {
      <p>4. On January 7th, 1953, President Truman announced that the United States had developed a hydrogen bomb. Why are hydrogen bombs more powerful than atomic bombs? The largest hydrogen bomb to be detonated was the Tsar Bomba, with a blast yield of 210 PJ. McDonalds has served over 300 billion hamburgers since its founding. Which contains more energy -- 300 billion Big Macs or the Tsar Bomba?
     </p>
     <br></br>
-    <p><b></b>If n is an int, what is the complexity of the following code in Big-O notation? Explain.</p>
+    <p><b></b>5. If n is an int, what is the complexity of the following code in Big-O notation? Explain.</p>
     <pre>{`
     for (int i = 0; i < n; i++) {
         for (int j = 1; j <= n; j *= 2) {
