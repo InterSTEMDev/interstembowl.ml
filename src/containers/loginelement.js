@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { LoginElement } from "../components/index" 
+import "../styles/style.css" 
 
 
 export function LoginElementContainer(props) {
@@ -56,18 +57,13 @@ export function LoginElementContainer(props) {
                 <br></br><br></br>
 
                 <LoginElement.ButtonContainer width="100%" >
-                    <div className="btnContainer">
-
-                                <button className="authButton" onClick={handleLogin}>Sign In</button>
-                                <p className="errorMsg">{emailError}</p>
-                                <p className="errorMsg">{passwordError}</p>
-                     
-                        
-
-
+                    <div className="btnContainer">                          
+                        <button className="authButton" onClick={handleLogin}>Sign In</button>                        
+                        <button className="authButton"><a href="https://nahn5f40e7j.typeform.com/to/dbH76h3J" target="_blank">Sign Up</a></button>                                     
                     </div>
                 </LoginElement.ButtonContainer>
-
+                <p className="errorMsg">{emailError}</p>
+                <p className="errorMsg">{passwordError}</p>
                 {/* 
                 <LoginElement.ButtonContainer width="100%" >
                     <div className="btnContainer">

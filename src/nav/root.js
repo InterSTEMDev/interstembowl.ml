@@ -31,13 +31,13 @@ export class RootNav extends React.Component {
             <>
             <ul>
                 <li>
-                    <a className={this.state.activeClass == "" ? "is-active" : ""} id="" onClick={this.handleRedirect}>POTD</a>   
+                    <a className={this.state.activeClass === "" ? "is-active" : ""} id="" onClick={this.handleRedirect}>POTD</a>   
                 </li>
                 <li>
-                    <a className={this.state.activeClass == "resources" ? "is-active" : ""} id="resources" onClick={this.handleRedirect}>Resources</a>   
+                    <a className={this.state.activeClass === "resources" ? "is-active" : ""} id="resources" onClick={this.handleRedirect}>Resources</a>   
                 </li>
                 <li>
-                    <a className={this.state.activeClass == "login" ? "is-active" : ""} id="login" onClick={this.handleRedirect}>Login</a>   
+                    <a className={this.state.activeClass === "login" ? "is-active" : ""} id="login" onClick={this.handleRedirect}>Login</a>   
                 </li>
             </ul>
             </>

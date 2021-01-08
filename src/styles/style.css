@@ -481,3 +481,26 @@ ul li a{
 			border-bottom:5px solid #fff
 	}
 }
+.btnContainer {
+  display: flex;
+}
+.btnContainer p {
+  margin-right: 2rem;
+}
+.authButton {
+  background-color: var(--primary-color);
+  text-transform: uppercase;
+  color: white;
+  padding: 1rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  border: solid var(--primary-color);
+  border-radius: 20px;
+  font-family: 'Ergonomique Bold';
+}
+.authButton a {
+  color: white;
+}
+.authButton:hover, .authButton:focus {
+  color: #495b6c !important;
+}
