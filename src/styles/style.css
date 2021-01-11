@@ -24,8 +24,9 @@
 	src: url("../fonts/Muli-Light.ttf") format("truetype");
 }
 body{
-	background:var(--lighter-color);
-	padding-top:90px
+	background-color:var(--lighter-color);
+  padding-top:90px;
+  overflow-x: hidden;
 }
 @media only screen and (min-width:720px){
 	body{
@@ -288,9 +289,6 @@ ul li{
 ul li a{
 	display:inline-block
 }
-#intro {
-	
-}
 .c-paper{
 	position:relative;
 	margin-bottom:14px;
@@ -481,26 +479,49 @@ ul li a{
 			border-bottom:5px solid #fff
 	}
 }
+.login-container {
+  background-color: #f5f9f7;
+}
+.login-input {
+  margin-bottom: 2em;
+  padding: 12px 20px;
+  background-color: var(--color-bg);
+  border-bottom: 3px solid var(--primary-color);
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+}
 .btnContainer {
   display: flex;
-}
-.btnContainer p {
-  margin-right: 2rem;
+  justify-content: center;
 }
 .authButton {
+  font-size: 16px;
+  width: 50%;
   background-color: var(--primary-color);
   text-transform: uppercase;
   color: white;
   padding: 1rem;
-  margin-right: 2rem;
   margin-bottom: 2rem;
   border: solid var(--primary-color);
   border-radius: 20px;
   font-family: 'Ergonomique Bold';
+}
+@media only screen and (max-width:870px){
+  .authButton {
+    width: 100%;
+  }
+  .login-container .sign-in {
+    padding: 10px;
+  }
 }
 .authButton a {
   color: white;
 }
 .authButton:hover, .authButton:focus {
   color: #495b6c !important;
+}
+.errorMsg {
+  color: salmon !important;
+  padding: 10px;
 }
