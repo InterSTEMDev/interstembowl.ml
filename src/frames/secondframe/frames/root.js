@@ -12,8 +12,8 @@ export default class RootSecondFrame extends React.Component {
             
             <>
               <section id="intro" className="c-paper c-paper--no-border-radius-bottom h-mb-0">
-            <p>Leaderboard</p>
-            <table> 
+            <h2 className="section-title">Leaderboard</h2>
+            <table className="leaderboard"> 
                 <tr style={{backgroundColor: "#dfeff5"}}>
                     <th></th>
                     <th>Student</th>
@@ -48,7 +48,7 @@ export default class RootSecondFrame extends React.Component {
             </table> 
          </section>
  <section id="intro" className="c-paper c-paper--no-border-radius-bottom h-mb-0">
-    Jan 4, 2021
+    <h2 className="section-title">Jan 4, 2021</h2>
      <br></br><br></br>
      <p>1. On the first day of school, 78 people show up to the math club meeting. Each person knows at least 52 other people at the club meeting. Prove that there are 4 people with the same number of friends.</p>
      <br></br>

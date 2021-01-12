@@ -61,7 +61,7 @@ export function LoginElementContainer(props) {
                     </div>
                     <p className="errorMsg">{emailError}</p>
                     <p className="errorMsg">{passwordError}</p>
-                    <p className="sign-in">Need an account? <a href="https://nahn5f40e7j.typeform.com/to/dbH76h3J">Sign Up</a>.</p>
+                    <p className="sign-up">Need an account? <a href="https://nahn5f40e7j.typeform.com/to/dbH76h3J">Sign Up</a>.</p>
                 </LoginElement.ButtonContainer>
                 
                 {/* 

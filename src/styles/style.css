@@ -40,8 +40,8 @@ body{
 	}
 }
 
-.footerText {
-	color: black !important; 
+*,*:focus,*:hover {
+  outline: none;
 }
 
 pre {
@@ -343,10 +343,16 @@ ul li a{
 .c-footer{
 	display:block;
 	width:100%;
-	padding:20px 0 44px;
+	padding:30px 0 44px;
 	text-align:center;
 	font-size:18px;
-	color: white;
+  color: white;
+  background-color: black;
+}
+@media only screen and (max-width:918px){
+	.c-footer{
+		font-size: 16px;
+	}
 }
 .c-footer__links{
 	margin-bottom:20px
@@ -479,6 +485,13 @@ ul li a{
 			border-bottom:5px solid #fff
 	}
 }
+.section-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.leaderboard th {
+  padding: 20px;
+}
 .login-container {
   background-color: #f5f9f7;
 }
@@ -490,6 +503,10 @@ ul li a{
   border-left: 0;
   border-right: 0;
   border-top: 0;
+  border-radius: 0px;
+  font-size: 16px;
+  font-family: 'Giga Sans Light';
+  text-align: center;
 }
 .btnContainer {
   display: flex;
@@ -497,7 +514,7 @@ ul li a{
 }
 .authButton {
   font-size: 16px;
-  width: 50%;
+  width: 30%;
   background-color: var(--primary-color);
   text-transform: uppercase;
   color: white;
@@ -507,12 +524,19 @@ ul li a{
   border-radius: 20px;
   font-family: 'Ergonomique Bold';
 }
+.login-container .sign-up {
+  font-size: 16px;
+}
 @media only screen and (max-width:870px){
   .authButton {
     width: 100%;
   }
-  .login-container .sign-in {
+  .login-container .sign-up {
     padding: 10px;
+    font-size: 18px;
+  }
+  .login-input {
+    width: 90%;
   }
 }
 .authButton a {

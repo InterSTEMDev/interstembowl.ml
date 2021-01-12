@@ -22,7 +22,7 @@ export const Info = styled.div`
 `;
 
 export const Input = styled.div`
-  
+
 `; 
 
 export const ButtonContainer = styled.div`
