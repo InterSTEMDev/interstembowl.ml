@@ -5,6 +5,7 @@ import {Route, BrowserRouter as Router} from "react-router-dom"
 import {RootNav} from "../nav/root"
 import {RootFirstFrame, ResourcesFirstFrame, LoginFirstFrame} from "../frames/firstframe/index"
 import {RootSecondFrame} from "../frames/secondframe/index" 
+import {collapseNav} from "../nav/script"
 
 
 
@@ -23,17 +24,26 @@ export class LayoutContainer extends React.Component {
             <>
             <Router>
             <div className="l-container">
-                    <header className="header">
+                  <header className="header">
                     <div className="header__title">
                         <img src={logo} />
                         <h1 style={{fontSize: "50px"}}><span>Inter</span><span style={{color:"#f57f93"}}>STEM</span> Bowl</h1>
                     </div>
-                </header>
+                  </header>
                 <nav>
-                    <div className="nav-primary" id="myTopnav">
-                        <div className="nav-primary__links">
-                            <Route path={["/", "/resources", "/login"]} exact component={RootNav}/>
-                        </div> 
+                  <div className="nav-primary-collapse">
+                        <div className="collapse-btn" onClick={collapseNav} style={{display: "none"}}>
+                            <svg viewBox="0 0 100 80" width="40" height="40">
+                                <rect width="100" height="20"></rect>
+                                <rect y="30" width="100" height="20"></rect>
+                                <rect y="60" width="100" height="20"></rect>
+                            </svg>
+                        </div>
+                        <div className="nav-primary" id="myTopnav">
+                            <div className="nav-primary__links">
+                                <Route path={["/", "/resources", "/login"]} exact component={RootNav}/>
+                            </div> 
+                        </div>
                     </div>
                 </nav>
                 <Route path="/" exact component={RootFirstFrame}/>

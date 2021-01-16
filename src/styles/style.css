@@ -422,6 +422,26 @@ ul li a{
 			width:100%;
 	}
 }
+.collapse-btn {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.collapse-btn.active {  
+}
+@media only screen and (max-width:870px){
+	.nav-primary {
+    display: none;
+  }
+  .nav-primary__links {
+    margin-bottom: 2em;
+  }
+  .collapse-btn {
+    display: block !important;
+  }
+}
 .nav-primary__links{
 	display:flex;
 			align-items:center;
