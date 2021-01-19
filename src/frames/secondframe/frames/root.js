@@ -1,15 +1,40 @@
 import React, { cloneElement } from "react" 
+import { Jan4Archive, Jan11Archive } from "../../../archive/index"
+
+
 export default class RootSecondFrame extends React.Component {
     constructor() {
         super()
         this.state = {
-
+            showMessage: false,
+            message: "See past POTDs (late submission allowed)"
         }
     }
 
+
+    _showMessage = (bool, e) => {
+        this.setState({
+          showMessage: bool,
+        
+        });
+        if (bool) {
+            this.setState({
+                message: "Collapse all POTDs" 
+              
+              });
+        }
+        else {
+            this.setState({
+                message: "See past POTDs (late submission allowed)" 
+              
+              });
+        }
+      }
+
+
+
     render() {
         return (
-            
             <>
               <section id="intro" className="c-paper c-paper--no-border-radius-bottom h-mb-0">
             <h2 className="section-title">Leaderboard</h2>
@@ -47,55 +72,52 @@ export default class RootSecondFrame extends React.Component {
                 </tr>
             </table> 
          </section>
- <section id="intro" className="c-paper c-paper--no-border-radius-bottom h-mb-0">
-    <h2 className="section-title">Jan 11, 2021</h2>
+         <section id="intro" className="c-paper c-paper--no-border-radius-bottom h-mb-0">
+         <h2 className="section-title">Jan 18, 2021</h2>
      <br></br>
-     <p>1. My clock reads 1:01 PM when I take a drink of magic soda. Every time the minute number on my clock changes from 01 to 02, my height increases 50%. Every time the minute number changes from 31 to 32, my height decreases by 40%. I was 6 feet tall when I drank the magic soda. What time is it when I am first less than 1 foot tall?</p>
+     <p>1. Suppose you play a game where you begin with a score of 0 and aim to maximize the amount of coins earned. On every turn, you receive a coin to flip. A heads results in 1 point added to your score, but a tails results in a “strike” and the loss of all your points. Prove the optimal strategy for this game along with the expected earnings of that strategy.</p>
      <br></br>
      <p>2.</p>
-     <table className="leaderboard" style={{ border: "1px solid #dddddd"}}> 
-                <tr>
-                    <th style={{ border: "1px solid #dddddd"}}>2</th>
-                    <th style={{ border: "1px solid #dddddd"}}>1</th>
-                    <th style={{ border: "1px solid #dddddd"}}>1</th>
-                    <th style={{ border: "1px solid #dddddd"}}>1</th>
-                    <th style={{ border: "1px solid #dddddd"}}>2</th>
-                    <th style={{ border: "1px solid #dddddd"}}>2</th>
-                    <th style={{ border: "1px solid #dddddd"}}>2</th>
-                    <th style={{ border: "1px solid #dddddd"}}>?</th>
-                    <th style={{ border: "1px solid #dddddd"}}>1</th>
-                    <th style={{ border: "1px solid #dddddd"}}>1</th>
-                    <th style={{ border: "1px solid #dddddd"}}>2</th>
-                    <th style={{ border: "1px solid #dddddd"}}>1</th>
-                    <th style={{ border: "1px solid #dddddd"}}> 1</th>
-                </tr>
-                <tr>
-                    <th style={{ border: "1px solid #dddddd"}}>1</th>
-                    <th style={{ border: "1px solid #dddddd"}}>1</th>
-                    <th style={{ border: "1px solid #dddddd"}}>1</th>
-                    <th style={{ border: "1px solid #dddddd"}}>2</th>
-                    <th style={{ border: "1px solid #dddddd"}}>1</th>
-                    <th style={{ border: "1px solid #dddddd"}}>1</th>
-                    <th style={{ border: "1px solid #dddddd"}}>2</th>
-                    <th style={{ border: "1px solid #dddddd"}}>1</th>
-                    <th style={{ border: "1px solid #dddddd"}}>1</th>
-                    <th style={{ border: "1px solid #dddddd"}}>1</th>
-                    <th style={{ border: "1px solid #dddddd"}}>2</th>
-                    <th style={{ border: "1px solid #dddddd"}}>2</th>
-                    <th style={{ border: "1px solid #dddddd"}}>1</th>
-                </tr>
-            </table> 
+            <pre>{`
+              B   C   D   E   ?   I   K   O   X
+            `}
+            </pre>
            
-    <br></br><br></br>
-     <p>3. Research one of the following psychological experiments and analyze the ethics of the research. The Milgram Obedience Experiment, the Asch Conformity Experiment, or the Little Albert Experiment. </p>
+    <br></br>
+     <p>3. Define sustainability and one environmental problem in your region. Propose an effective solution and support your answer with scientific evidence. </p>
         <br></br>
-     <p>4. On January 14th, 1911, Roald Amundsen landed on the Ross Ice Shelf. Assuming that the Ross Ice Shelf is the same size as France and 300 meters thick, what would be the size in global mean sea level if the entire glacier melted? Keep in mind that 71% of the Earth’s surface is covered in water, and water expands when melted. 
+     <p>4. On January 21, 1793, King Louis XVI was executed by guillotine. Using reasonable approximations and physical reasoning, determine the necessary height a guillotine blade must fall to cleanly execute the average man. 
     </p>
     <br></br>
-    <p><b></b>5. microRNAs (miRNAs) are RNA molecules that range from 15-20 nucleotides long on average. The functionality of miRNAs is to make post-transcriptional modifications to the cell’s proteome by binding to and obstructing or degrading mRNA. Why could taking advantage of miRNA molecules through the development of new therapeutics potentially be beneficial in dealing with viruses? </p>
+    <p>5. The formula for affine cipher encryption is ax + b (mod 26), where a and b are integers. Given an all-lowercase, no-space plaintext (String), a (int) and b (int), write a program to find the ciphertext. Any code that can produce the correct output will be granted full credit;
+    pseudocode can gain partial credit.  
+    <br></br>Input format: n (number of letters in plaintext), a, b, and actual plaintext. 
+    <br></br><br></br><u>Sample input #1:</u> 
+    <br></br>5
+    <br></br>3
+    <br></br>1
+    <br></br>hello
+    <br></br><br></br>
+    <u>Sample output #1:</u>
+    <br></br>wniir </p>
 
- </section>
+         </section>
 
+ 
+<div>
+<section id="intro" className="c-paper c-paper--no-border-radius-bottom h-mb-0">
+    <a id="Jan11Archive" onClick={this._showMessage.bind(null, ! this.state.showMessage)}>{this.state.message}</a>
+</section>
+    { this.state.showMessage && (
+        <>
+        <Jan4Archive/> 
+        <Jan11Archive/>
+        </> 
+    ) }
+    </div>
+    
+ 
+        
 
       
     
