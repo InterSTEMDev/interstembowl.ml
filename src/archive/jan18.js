@@ -34,42 +34,6 @@ export default class Jan18Archive extends React.Component {
     render() {
         return (
             <>
-              <section id="intro" className="c-paper c-paper--no-border-radius-bottom h-mb-0">
-            <h2 className="section-title">Leaderboard</h2>
-            <table className="leaderboard"> 
-                <tr style={{backgroundColor: "#dfeff5"}}>
-                    <th></th>
-                    <th>Student</th>
-                    <th>Points</th>
-                    
-                </tr>
-                <tr>
-                    <th style={{backgroundColor: "#dfeff5"}}>1</th>
-                    <th style={{backgroundColor: "#25f01d"}}>Jeffrey Lin</th>
-                    <th style={{backgroundColor: "#25f01d"}}>34</th>
-                </tr>
-                <tr>
-                    <th style={{backgroundColor: "#dfeff5"}}>2</th>
-                    <th style={{backgroundColor: "#c8f2c7"}}>Peter Chang</th>
-                    <th style={{backgroundColor: "#c8f2c7"}}>30</th>
-                </tr>
-                <tr>
-                    <th style={{backgroundColor: "#dfeff5"}}>3</th>
-                    <th style={{backgroundColor: "#c8f2c7"}}>Andrew Kim</th>
-                    <th style={{backgroundColor: "#c8f2c7"}}>28</th>
-                </tr>
-                <tr>
-                    <th style={{backgroundColor: "#dfeff5"}}>4</th>
-                    <th style={{backgroundColor: "#c8f2c7"}}>Amanda Wright</th>
-                    <th style={{backgroundColor: "#c8f2c7"}}>26</th>
-                </tr>
-                <tr>
-                <th style={{backgroundColor: "#dfeff5"}}>5</th>
-                    <th style={{backgroundColor: "#c8f2c7"}}>Albert Oh</th>
-                    <th style={{backgroundColor: "#c8f2c7"}}>19</th>
-                </tr>
-            </table> 
-         </section>
          <section id="intro" className="c-paper c-paper--no-border-radius-bottom h-mb-0">
          <h2 className="section-title">Jan 18, 2021</h2>
      <br></br>
@@ -102,17 +66,6 @@ export default class Jan18Archive extends React.Component {
          </section>
 
  
-<div>
-<section id="intro" className="c-paper c-paper--no-border-radius-bottom h-mb-0">
-</section>
-    { this.state.showMessage && (
-        <>
-        <Jan4Archive/> 
-        <Jan11Archive/>
-        <Jan18Archive/>
-        </> 
-    ) }
-    </div>
     
  
         
