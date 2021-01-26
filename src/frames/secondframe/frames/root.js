@@ -1,5 +1,5 @@
-import React, { cloneElement } from "react" 
-import { Jan4Archive, Jan11Archive } from "../../../archive/index"
+import React from "react" 
+import { Jan4Archive, Jan11Archive, Jan18Archive } from "../../../archive/index"
 
 
 export default class RootSecondFrame extends React.Component {
@@ -73,24 +73,20 @@ export default class RootSecondFrame extends React.Component {
             </table> 
          </section>
          <section id="intro" className="c-paper c-paper--no-border-radius-bottom h-mb-0">
-         <h2 className="section-title">Jan 18, 2021</h2>
+         <h2 className="section-title">Jan 25th, 2021</h2>
      <br></br>
      <p>1. Suppose you play a game where you begin with a score of 0 and aim to maximize the amount of coins earned. On every turn, you receive a coin to flip. A heads results in 1 point added to your score, but a tails results in a “strike” and the loss of all your points. Prove the optimal strategy for this game along with the expected earnings of that strategy.</p>
      <br></br>
-     <p>2.</p>
-            <pre>{`
-              B   C   D   E   ?   I   K   O   X
-            `}
-            </pre>
+     <p>2. Please move one matchstick to reduce the number below by half.</p>
+     <img src="matchesjan25th.png" />
            
     <br></br>
-     <p>3. Define sustainability and one environmental problem in your region. Propose an effective solution and support your answer with scientific evidence. </p>
+     <p>3. Describe how COVID-19 has impacted the economy of the United States. Use a supply and demand curve to support your answer. </p>
         <br></br>
-     <p>4. On January 21, 1793, King Louis XVI was executed by guillotine. Using reasonable approximations and physical reasoning, determine the necessary height a guillotine blade must fall to cleanly execute the average man. 
-    </p>
+     <p>4. On January 28, 1986, the Challenger space shuttle exploded after 73 seconds in flight. If the Challenger generated a steady power of 37 million horsepower during the duration of its flight, at what height did it explode?</p>
     <br></br>
-    <p>5. The formula for affine cipher encryption is ax + b (mod 26), where a and b are integers. Given an all-lowercase, no-space plaintext (String), a (int) and b (int), write a program to find the ciphertext. Any code that can produce the correct output will be granted full credit;
-    pseudocode can gain partial credit.  
+    <p>5. Every time a cell divides, a repeating sequence of nucleotides at the end of its chromosomes known as the telomeres shorten. These act as protective caps to make sure none of the actual genome gets removed during cell division. As such, telomere length is an indication of cell age. Keeping this in mind, why would a clone of an organism created from the body cells of another organism have a shorter lifespan?  
+
     <br></br>Input format: n (number of letters in plaintext), a, b, and actual plaintext. 
     <br></br><br></br><u>Sample input #1:</u> 
     <br></br>5
@@ -106,12 +102,12 @@ export default class RootSecondFrame extends React.Component {
  
 <div>
 <section id="intro" className="c-paper c-paper--no-border-radius-bottom h-mb-0">
-    <a id="Jan11Archive" onClick={this._showMessage.bind(null, ! this.state.showMessage)}>{this.state.message}</a>
 </section>
     { this.state.showMessage && (
         <>
         <Jan4Archive/> 
         <Jan11Archive/>
+        <Jan18Archive/>
         </> 
     ) }
     </div>
