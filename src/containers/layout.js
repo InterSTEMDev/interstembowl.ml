@@ -3,8 +3,8 @@ import { LoginSetupContainer } from "./loginsetup"
 import "../styles/style.css" 
 import {Route, BrowserRouter as Router} from "react-router-dom" 
 import {RootNav} from "../nav/root"
-import {RootFirstFrame, ResourcesFirstFrame, LoginFirstFrame} from "../frames/firstframe/index"
-import {RootSecondFrame} from "../frames/secondframe/index" 
+import {RootFirstFrame, PotdFirstFrame, ResourcesFirstFrame, LoginFirstFrame} from "../frames/firstframe/index"
+import {PotdSecondFrame} from "../frames/secondframe/index" 
 import {collapseNav} from "../nav/script"
 
 
@@ -41,16 +41,18 @@ export class LayoutContainer extends React.Component {
                         </div>
                         <div className="nav-primary" id="myTopnav">
                             <div className="nav-primary__links">
-                                <Route path={["/", "/resources", "/login"]} exact component={RootNav}/>
+                                <Route path={["/", "/potd", "/resources", "/login"]} exact component={RootNav}/>
                             </div> 
                         </div>
                     </div>
                 </nav>
                 <Route path="/" exact component={RootFirstFrame}/>
+                <Route path="/potd" exact component={PotdFirstFrame}/>
+                <Route path="/potd" exact component={PotdSecondFrame}/>
                 <Route path="/resources" exact component={ResourcesFirstFrame}/>
                 <Route path="/login" exact component={LoginFirstFrame}/>
        
-                <Route path="/" exact component={RootSecondFrame}/>
+
                 
                 <footer className="c-footer">
                     <div className="c-footer__links">

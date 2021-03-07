@@ -29,7 +29,7 @@ export default class ResourcesFirstFrame extends React.Component {
         return (
             <>
             <section id="intro" className="c-paper c-paper--no-border-radius-bottom h-mb-0">
-            {this.state.loggedIn == 'yes' ? 
+            {this.state.loggedIn == 'no' ? 
                     <>
                     <p>Please come back later for sample tests and a study list!</p>
                     </>

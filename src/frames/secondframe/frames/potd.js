@@ -2,7 +2,7 @@ import React from "react"
 import { Jan4Archive, Jan11Archive, Jan18Archive, Jan25Archive } from "../../../archive/index"
 
 
-export default class RootSecondFrame extends React.Component {
+export default class PotdSecondFrame extends React.Component {
     constructor() {
         super()
         this.state = {

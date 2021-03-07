@@ -1,1 +1,1 @@
-export { default as RootSecondFrame } from "./frames/root" 
+export { default as PotdSecondFrame } from "./frames/potd" 
