@@ -29,9 +29,10 @@ export default class ResourcesFirstFrame extends React.Component {
         return (
             <>
             <section id="intro" className="c-paper c-paper--no-border-radius-bottom h-mb-0">
-            {this.state.loggedIn == 'no' ? 
+            {this.state.loggedIn == 'yes' ? 
                     <>
-                    <p>Please come back later for sample tests and a study list!</p>
+                    <b><p>If you have not filled out the binding registration form after creating an InterSTEM Bowl account, please do so ASAP <a href="https://docs.google.com/forms/d/e/1FAIpQLScILTXGyAxtIIyi9pYYxr4ddvdH1S9oerO6cQ5SbYjW22B-dQ/viewform" target="_blank">here!</a></p></b>
+                    <p>Additional resources will be attached later this weekend.</p>
                     </>
                 : ( 
                     <>
