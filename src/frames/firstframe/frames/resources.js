@@ -30,9 +30,14 @@ export default class ResourcesFirstFrame extends React.Component {
         
         return (
             <>
-            <section id="intro" className="c-paper c-paper--no-border-radius-bottom h-mb-0" style={{paddingBottom:0}}>
+            <div className="c-paper" style={{paddingBottom:0}}>
+              <center><img src={calendar} id="calendar" style={{backgroundColor:"var(--lighter-color)"}}></img></center>
+            </div>
+            <hr></hr>
+
+            <section id="intro" className="c-paper c-paper--no-border-radius-bottom h-mb-0">
              <h2 className="section-title">Study Resources</h2>
-                {this.state.loggedIn == 'yes' ? 
+                {this.state.loggedIn == 'no' ? 
                     <>
                     <b><p>NOTICE: If you have not filled out the binding registration form after creating an InterSTEM Bowl account, please do so ASAP <a href="https://docs.google.com/forms/d/e/1FAIpQLScILTXGyAxtIIyi9pYYxr4ddvdH1S9oerO6cQ5SbYjW22B-dQ/viewform" target="_blank">here!</a> Additional competition resources will be attached later this week.</p></b>
                     <a className="resource-btn" href="https://drive.google.com/file/d/16b_T0hV1kze3rblCPp5kWHQfMZmM9VIE/view?usp=sharing" target="_blank">Practice Test 1</a>
@@ -43,10 +48,7 @@ export default class ResourcesFirstFrame extends React.Component {
                     </> 
                 )}
             </section>
-            <div className="c-paper">
-                      <h2 className="section-title">Important Dates</h2>
-                      <center><img src={calendar} id="calendar" style={{backgroundColor:"var(--lighter-color)"}}></img></center>
-                    </div>
+                       
             </>
         )
     }

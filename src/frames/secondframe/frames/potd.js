@@ -36,7 +36,7 @@ export default class PotdSecondFrame extends React.Component {
     render() {
         return (
             <>
-              <section id="intro" className="c-paper c-paper--no-border-radius-bottom h-mb-0">
+              <section id="intro" className="c-paper c-paper--no-border-radius-bottom h-mb-0" style={{}}>
             <h2 className="section-title">Leaderboard</h2>
             <table className="leaderboard"> 
                 <tr style={{backgroundColor: "#dfeff5"}}>
@@ -81,7 +81,7 @@ export default class PotdSecondFrame extends React.Component {
 
 <hr></hr>
 <div>
-<section id="intro" className="c-paper c-paper--no-border-radius-bottom h-mb-0" style={{color: "black !important" }}>
+<section id="intro" className="c-paper c-paper--no-border-radius-bottom h-mb-0" style={{color: "black !important", textAlign: "center", paddingTop: 0 }}>
 <a id="Jan11Archive" onClick={this._showMessage.bind(null, ! this.state.showMessage)}>{this.state.message}</a>
 </section>
     { this.state.showMessage && (

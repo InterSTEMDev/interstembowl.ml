@@ -24,7 +24,7 @@
 	src: url("../fonts/Muli-Light.ttf") format("truetype");
 }
 body{
-	background-color:var(--lighter-color);
+	background-color:white;
   padding-top:90px;
   overflow-x: hidden;
 }
@@ -298,7 +298,7 @@ ul li a{
   margin-top: 40px;
 	margin-bottom:14px;
 	padding:50px;
-	background-color: #f5f9f7;
+	background-color: white;
 }
 @media only screen and (max-width:744px){
 	.c-paper{
@@ -544,18 +544,20 @@ ul li a{
 	}
 }
 .section-title {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
 }
 .leaderboard th {
   padding: 20px;
 }
 #Jan11Archive {
   color: black;
-  font-size: 20px;
+  font-size: 30px;
 }
 .login-container {
-  background-color: #f5f9f7;
+  background-color: white;
   font-family: 'Giga Sans Light';
 }
 .login-input {
@@ -622,6 +624,11 @@ ul li a{
   height: auto;
   margin: 0 auto;
 }
+@media screen and (max-width: 900px) {
+  #calendar {
+    max-width: 80vw;
+  }
+}
 .resource-btn {
   display: inline-block;
   border: 2px solid var(--lighter-color);
@@ -634,4 +641,13 @@ ul li a{
 .resource-btn:hover {
   border: 2px solid var(--primary-color);
   background-color: var(--lighter-color);
+}
+.sponsors-container {
+  text-align: center;
+}
+.sponsors-container .sponsor img {
+  width: 40vw;
+  /* max-width: 40vw; 
+  flex-shrink: 0; */
+  height: auto;
 }

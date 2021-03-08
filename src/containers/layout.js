@@ -22,6 +22,9 @@ export class LayoutContainer extends React.Component {
     render() {
         return (
             <>
+            {/* <head>
+              <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/images/logo.png"/>
+            </head> */}
             <Router>
             <div className="l-container">
 							<section class="banner">

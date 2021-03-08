@@ -34,7 +34,7 @@ export default class Jan25Archive extends React.Component {
     render() {
         return (
             <>
-                 <section id="intro" className="c-paper c-paper--no-border-radius-bottom h-mb-0">
+                 <section id="intro" className="c-paper c-paper--no-border-radius-bottom h-mb-0" style={{paddingTop: 0}}>
          <h2 className="section-title">Jan 25th, 2021</h2>
      <br></br>
      <p>1. Please move one matchstick to reduce the number below by half.</p>
