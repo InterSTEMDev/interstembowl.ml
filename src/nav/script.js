@@ -7,6 +7,7 @@ export function collapseNav() {
     content.style.display = "none";
   } else {
     content.style.display = "block";
+    content.style.borderBottom = "2px solid gray";
     button.classList.toggle('active');
   }
 }

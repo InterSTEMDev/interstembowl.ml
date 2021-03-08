@@ -12,6 +12,7 @@ export default class RootFirstFrame extends React.Component {
     render() {
         return (
             <>
+            
             <section id="intro" className="c-paper c-paper--no-border-radius-bottom h-mb-0">
                 <p>InterSTEM Bowl is a unique STEM competition that allows students to showcase their creativity and test their knowledge in a variety of STEM fields. The competition will be held in late March with the follow categories: </p>
                 <p>  - Quiz category: a science bowl-like exam on subjects such as biology, chemistry, physics, mathematics, and computer science</p>

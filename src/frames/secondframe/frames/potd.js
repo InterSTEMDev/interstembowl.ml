@@ -7,7 +7,7 @@ export default class PotdSecondFrame extends React.Component {
         super()
         this.state = {
             showMessage: false,
-            message: "See past POTDs (submissions closed)"
+            message: "See past POTDs >"
         }
     }
 
@@ -19,13 +19,13 @@ export default class PotdSecondFrame extends React.Component {
         });
         if (bool) {
             this.setState({
-                message: "Collapse all POTDs" 
+                message: "Collapse past POTDs" 
               
               });
         }
         else {
             this.setState({
-                message: "See past POTDs (late submission allowed)" 
+                message: "See past POTDs >" 
               
               });
         }
@@ -79,9 +79,9 @@ export default class PotdSecondFrame extends React.Component {
          </section> 
          */} 
 
- 
+<hr></hr>
 <div>
-<section id="intro" className="c-paper c-paper--no-border-radius-bottom h-mb-0">
+<section id="intro" className="c-paper c-paper--no-border-radius-bottom h-mb-0" style={{color: "black !important" }}>
 <a id="Jan11Archive" onClick={this._showMessage.bind(null, ! this.state.showMessage)}>{this.state.message}</a>
 </section>
     { this.state.showMessage && (

@@ -24,9 +24,10 @@ export class LayoutContainer extends React.Component {
             <>
             <Router>
             <div className="l-container">
+							<section class="banner">
                   <header className="header">
                     <div className="header__title">
-                        <img src={logo} />
+                        <img src={logo}/>
                         <h1 style={{fontSize: "50px"}}><span>Inter</span><span style={{color:"#f57f93"}}>STEM</span> Bowl</h1>
                     </div>
                   </header>
@@ -46,25 +47,24 @@ export class LayoutContainer extends React.Component {
                         </div>
                     </div>
                 </nav>
+							</section>
+							
                 <Route path="/" exact component={RootFirstFrame}/>
                 <Route path="/potd" exact component={PotdFirstFrame}/>
                 <Route path="/potd" exact component={PotdSecondFrame}/>
                 <Route path="/resources" exact component={ResourcesFirstFrame}/>
-                <Route path="/login" exact component={LoginFirstFrame}/>
-       
-
-                
-                <footer className="c-footer">
-                    <div className="c-footer__links">
-                        <a href="https://www.instagram.com/inter.stem/" target="_blank" className="footerText">Instagram</a>
-                        <a href="https://discord.com/invite/Y9KSFVZ" target="_blank" className="footerText">Discord</a>
-                    </div>
-                    <div className="c-footer__copyright footerText">
-                        Developed by InterSTEM Tech Team.
-                    </div>
-                    </footer>
+                <Route path="/login" exact component={LoginFirstFrame}/>          
             </div>
-            </Router> 
+            <footer className="c-footer">
+                  <div className="c-footer__links">
+                      <a href="https://www.instagram.com/inter.stem/" target="_blank" className="footerText">Instagram</a>
+                      <a href="https://discord.com/invite/Y9KSFVZ" target="_blank" className="footerText">Discord</a>
+                  </div>
+                  <div className="c-footer__copyright footerText">
+                      Developed by InterSTEM Tech Team.
+                  </div>
+                </footer> 
+          </Router> 
 
 
     
