@@ -11,8 +11,7 @@ export default class Jan11Archive extends React.Component {
         return (
             <>
 
-<section id="intro" className="c-paper c-paper--no-border-radius-bottom h-mb-0" style={{paddingTop: 0}}>
-    <h2 className="section-title">Jan 11, 2021</h2>
+<section id="intro" className="c-paper archive c-paper--no-border-radius-bottom h-mb-0" style={{paddingTop: 0}}>
      <br></br>
      <p>1. My clock reads 1:01 PM when I take a drink of magic soda. Every time the minute number on my clock changes from 01 to 02, my height increases 50%. Every time the minute number changes from 31 to 32, my height decreases by 40%. I was 6 feet tall when I drank the magic soda. What time is it when I am first less than 1 foot tall?</p>
      <br></br>

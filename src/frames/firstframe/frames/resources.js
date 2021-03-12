@@ -31,11 +31,10 @@ export default class ResourcesFirstFrame extends React.Component {
         return (
             <>
             <div className="c-paper" style={{paddingBottom:0}}>
-              <center><img src={calendar} id="calendar" style={{backgroundColor:"var(--lighter-color)"}}></img></center>
+              <center><img src={calendar} id="calendar"></img></center>
             </div>
-            <hr></hr>
 
-            <section id="intro" className="c-paper c-paper--no-border-radius-bottom h-mb-0">
+            <section id="intro" className="c-paper colored-bg c-paper--no-border-radius-bottom h-mb-0" style={{backgroundColor:"var(--yellow)"}}>
              <h2 className="section-title">Study Resources</h2>
                 {this.state.loggedIn == 'yes' ? 
                     <>

@@ -10,23 +10,16 @@ export default class Jan4Archive extends React.Component {
     render() {
         return (
             <>
- <section id="intro" className="c-paper c-paper--no-border-radius-bottom h-mb-0" style={{paddingTop: 0}}>
-    <h2 className="section-title">Jan 4, 2021</h2>
+ <section id="intro" className="c-paper archive c-paper--no-border-radius-bottom h-mb-0">
      <br></br>
      <p>1. On the first day of school, 78 people show up to the math club meeting. Each person knows at least 52 other people at the club meeting. Prove that there are 4 people with the same number of friends.</p>
      <br></br>
-     <p>2.</p>
+     <p>2.
             <pre>{`
-                J A N = 4
-
-                F E B = 5
-
-                M A R = 4
-
-                A P R = ?
+                J A N = 4    F E B = 5    M A R = 4    A P R = ?
             `}
             </pre>
-           
+     </p>      
     <br></br>
      <p>3. If everyone on Earth had to move to a different planet, what are the most important things that people will need in order to survive? List and rank 3 needs. Use scientific concepts to explain why. </p>
         <br></br>

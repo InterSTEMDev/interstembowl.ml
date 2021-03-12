@@ -21,9 +21,8 @@ export default class RootFirstFrame extends React.Component {
                 <p>  - Writing category: an article submission on a designated prompt graded on content, writing style, and topic adherence</p> 
                 
             </section>
-            <hr></hr>
 
-            <section id="intro" className="c-paper c-paper--no-border-radius-bottom h-mb-0" style={{paddingTop: 0}}>
+            <section id="intro" className="c-paper colored-bg c-paper--no-border-radius-bottom h-mb-0">
                 <h2 className="section-title">Our Sponsors</h2>
                 <div className="sponsors-container">
                   <div className="sponsor">

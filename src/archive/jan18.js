@@ -34,8 +34,7 @@ export default class Jan18Archive extends React.Component {
     render() {
         return (
             <>
-         <section id="intro" className="c-paper c-paper--no-border-radius-bottom h-mb-0" style={{paddingTop: 0}}>
-         <h2 className="section-title">Jan 18, 2021</h2>
+         <section id="intro" className="c-paper archive c-paper--no-border-radius-bottom h-mb-0" style={{paddingTop: 0}}>
      <br></br>
      <p>1. Suppose you play a game where you begin with a score of 0 and aim to maximize the amount of coins earned. On every turn, you receive a coin to flip. A heads results in 1 point added to your score, but a tails results in a “strike” and the loss of all your points. Prove the optimal strategy for this game along with the expected earnings of that strategy.</p>
      <br></br>
