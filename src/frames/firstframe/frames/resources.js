@@ -104,7 +104,7 @@ Writing: 30 Points (grammar, syntax, writing style)
 Adherence to prompt: 10 Points
 <br></br><br></br><br></br><hr></hr>
 <br></br><b>Video</b> 
-<br></br>Explain the impact of a specific invention/scientific discovery in the 20th century that has had a significant influence on people’s daily lives.
+<br></br>
 
 <br></br><br></br>The prompt for the video competition will be released on March 15th on this website and through email to all registered participants. All submissions will be due by March 27th, 11:59pm PST via a Google Form linked on the website.
 
