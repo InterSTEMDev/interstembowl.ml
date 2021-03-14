@@ -302,6 +302,9 @@ ul li a{
 	padding:50px;
 	background-color: white;
 }
+.c-paper.intro {
+  margin-top: 80px;
+}
 .c-paper.colored-bg {
   background-color: var(--lighter-color);
   border-radius: 50px;
@@ -309,6 +312,9 @@ ul li a{
 @media only screen and (max-width:744px){
 	.c-paper{
 			padding: 42px
+  }
+  .c-paper.intro {
+    margin-top: 50px;
   }
   .accordion details {
     margin: 2rem 0;
@@ -369,7 +375,7 @@ ul li a{
 		font-size: 16px;
   }
   .c-footer {
-    margin-top: 50px;
+    margin-top: 80px;
   }
 }
 .c-footer__links{
@@ -430,7 +436,7 @@ ul li a{
 }
  @media only screen and (max-width:918px){
   .c-paper {
-    margin-top: 55px;
+    margin-top: 30px;
   }
 } 
 .news-grid{
@@ -657,14 +663,25 @@ ul li a{
 }
 .sponsors-container {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+}
+.sponsors-container .sponsor {
+  flex: 1 0 auto;
+  flex-basis: 50%;
+  text-align: center;
 }
 .sponsors-container .sponsor img {
-  width: 30vw;
-  /* max-width: 40vw; 
-  flex-shrink: 0; */
+  width: 25vw;
+  min-width: 200px;
   height: auto;
+}
+@media only screen and (max-width: 737px) {
+  .sponsors-container .sponsor {
+    padding-top: 15px;
+  }
 }
 details {
   position: relative;
@@ -697,6 +714,7 @@ details > summary {
 }
 .accordion summary:hover {
   color: var(--primary-color);
+  cursor: pointer;
 }
 .accordion summary:focus {
   outline: none;
