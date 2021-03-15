@@ -2,7 +2,6 @@ import React from "react";
 import "../../../styles/style.css";
 import aopsLogo from "../../../images/aops-logo.svg";
 import wolframAlphaLogo from "../../../images/wolfram.png";
-import prompt from "../../../images/prompts.png";
 
 export default class RootFirstFrame extends React.Component {
   constructor() {
@@ -14,14 +13,7 @@ export default class RootFirstFrame extends React.Component {
     return (
       <>
         <section className="c-paper intro c-paper--no-border-radius-bottom h-mb-0">
-          <div className="sponsors-container">
-            <div className="sponsor">
-              <img src={prompt} style={{ width: "40vw" }}></img>
-            </div>
-          </div>
           <p>
-            <br></br>
-            <br></br>
             InterSTEM Bowl is a unique STEM competition that allows students to
             showcase their creativity and test their knowledge in a variety of
             STEM fields. Over $1000 in cash prizes will be split between 15+
