@@ -4,7 +4,7 @@ import { LoginSetupContainer } from "../../../containers/loginsetup";
 import firebase from "firebase";
 import prompt from "../../../images/prompts.png";
 
-import calendar from "../../../../src/images/InterSTEMBowlCalendar.png";
+import calendar from "../../../images/InterSTEMBowlCalendar.png";
 
 export default class ResourcesFirstFrame extends React.Component {
   constructor() {
@@ -45,16 +45,19 @@ export default class ResourcesFirstFrame extends React.Component {
             More resources will be posted as we approach the competition date!
           </p>
         </section>
-        <center>
-          <img src={prompt} id="calendar"></img>
-        </center>
-        <div className="c-paper" style={{ paddingBottom: 0 }}>
+        
+        <section className="c-paper c-paper--no-border-radius-bottom h-mb-0" style={{paddingBottom: 0}}>
+          <h2 className="section-title">Video & Article Prompts</h2>
+          <center>
+            <img src={prompt} id="calendar"></img>
+          </center>
           <center>
             <img src={calendar} id="calendar"></img>
           </center>
-        </div>
+        </section>
+        
         <section
-          className="c-paper intro colored-bg c-paper--no-border-radius-bottom h-mb-0"
+          className="c-paper colored-bg c-paper--no-border-radius-bottom h-mb-0"
           style={{ backgroundColor: "var(--yellow)" }}
         >
           <h2 className="section-title">Study Resources</h2>
@@ -210,9 +213,6 @@ export default class ResourcesFirstFrame extends React.Component {
         </section>
 
         <section className="c-paper c-paper--no-border-radius-bottom h-mb-0">
-          <br />
-          <br />
-          <br />
           <h2 className="section-title">Logistics</h2>
           <div className="accordion">
             <details>
