@@ -5,6 +5,9 @@ import aopsLogo from "../../../images/aops-logo.svg";
 import wolframAlphaLogo from "../../../images/wolfram.png";
 
 // Is there a better way to do this?
+import rLiu from "../../../images/ryanliu.JPG";
+import cSong from "../../../images/chrissong.jpg";
+import mKim from "../../../images/minseokim.jpg";
 import aJoo from "../../../images/alyssajoo.png";
 import aPan from "../../../images/andrewpan.png";
 import aLe from "../../../images/anh-thaile.png";
@@ -17,7 +20,7 @@ import eHo from "../../../images/ericho.png";
 import mShim from "../../../images/minjushim.JPG";
 import sSowa from "../../../images/satisowa.jpg";
 import sCao from "../../../images/shirleycao.JPG";
-import sYu from "../../../images/skylaryu.png";
+import sYu from "../../../images/skylaryu.png"; 
 
 export default class RootFirstFrame extends React.Component {
   constructor() {
@@ -60,6 +63,20 @@ export default class RootFirstFrame extends React.Component {
 
         <section className="c-paper c-paper--no-border-radius-bottom h-mb-0">
         <h2 className="section-title">InterSTEM Bowl Committee</h2>
+        <div className="team-container">
+          <div className="team-card">
+            <div className="team-img" style={{backgroundImage: `url(${rLiu})`}}></div>
+            <p>Ryan Liu (Director)</p>
+          </div>
+          <div className="team-card">
+            <div className="team-img" style={{backgroundImage: `url(${cSong})`}}></div>
+            <p>Chris Song (Director)</p>
+          </div>
+          <div className="team-card">
+            <div className="team-img" style={{backgroundImage: `url(${mKim})`}}></div>
+            <p>Minseo Kim (Director)</p>
+          </div>
+        </div>
         <div className="team-container">
           <div className="team-card">
             <div className="team-img" style={{backgroundImage: `url(${aJoo})`}}></div>
