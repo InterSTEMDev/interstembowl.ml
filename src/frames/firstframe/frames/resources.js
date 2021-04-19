@@ -3,7 +3,6 @@ import "../../../styles/style.css";
 import { LoginSetupContainer } from "../../../containers/loginsetup";
 import firebase from "firebase";
 import prompt from "../../../images/prompts.png";
-
 import calendar from "../../../images/InterSTEMBowlCalendar.png";
 
 export default class ResourcesFirstFrame extends React.Component {
@@ -30,7 +29,7 @@ export default class ResourcesFirstFrame extends React.Component {
   render() {
     return (
       <>
-        <section className="c-paper intro colored-bg c-paper--no-border-radius-bottom h-mb-0">
+        {/* <section className="c-paper intro colored-bg c-paper--no-border-radius-bottom h-mb-0">
           <p>
             NOTICE: If you have not filled out the binding registration form
             after creating an InterSTEM Bowl account, please do so ASAP{" "}
@@ -44,9 +43,12 @@ export default class ResourcesFirstFrame extends React.Component {
             interstembowl@gmail.com and monitor our Discord server for updates.
             More resources will be posted as we approach the competition date!
           </p>
+        </section> */}
+        <section className="c-paper intro colored-bg c-paper--no-border-radius-bottom h-mb-0">         
+          <center><p>Thank you for participating in the first semiannual InterSTEM Bowl! We look forward to your participation in the fall!</p></center>
         </section>
         
-        <section className="c-paper c-paper--no-border-radius-bottom h-mb-0" style={{paddingBottom: 0}}>
+        {/* <section className="c-paper c-paper--no-border-radius-bottom h-mb-0" style={{paddingBottom: 0}}>
           <h2 className="section-title">Video & Article Prompts</h2>
           <center>
             <img src={prompt} id="calendar"></img>
@@ -54,24 +56,15 @@ export default class ResourcesFirstFrame extends React.Component {
           <center>
             <img src={calendar} id="calendar"></img>
           </center>
-        </section>
+        </section> */}
         
         <section
-          className="c-paper colored-bg c-paper--no-border-radius-bottom h-mb-0"
+          className="c-paper colored-bg intro c-paper--no-border-radius-bottom h-mb-0"
           style={{ backgroundColor: "var(--yellow)" }}
         >
           <h2 className="section-title">Study Resources</h2>
           {this.state.loggedIn == "yes" ? (
             <>
-              <center>
-                <a
-                  className="resource-btn"
-                  href="https://drive.google.com/file/d/16b_T0hV1kze3rblCPp5kWHQfMZmM9VIE/view?usp=sharing"
-                  target="_blank"
-                >
-                  Practice Test
-                </a>
-              </center>
               <p>Biology Websites & Biology Textbooks:</p>
               <a
                 href="https://www.google.com/url?q=https://www.bioedonline.org/&sa=D&source=editors&ust=1615795905799000&usg=AOvVaw25ZbBF_ZLcNo6l2bjxhc6F"
@@ -107,7 +100,7 @@ export default class ResourcesFirstFrame extends React.Component {
               </p>
 
               <br></br>
-              <p>Chemistry Websites & Chemistry Textbooks</p>
+              <p>Chemistry Websites & Chemistry Textbooks:</p>
               <a href="http://www.bozemanscience.com/chemistry" target="_blank">
                 Bozeman Science,
               </a>
@@ -146,7 +139,7 @@ export default class ResourcesFirstFrame extends React.Component {
               </p>
 
               <br></br>
-              <p>Mathematics Websites & Mathematics Textbooks</p>
+              <p>Mathematics Websites & Mathematics Textbooks:</p>
               <a href="https://artofproblemsolving.com/" target="_blank">
                 Art of Problem Solving,
               </a>
@@ -172,7 +165,7 @@ export default class ResourcesFirstFrame extends React.Component {
               </p>
 
               <br></br>
-              <p>Physics Websites & Physics Textbooks</p>
+              <p>Physics Websites & Physics Textbooks:</p>
               <a
                 href="https://www.learner.org/series/physics-for-the-21st-century/"
                 target="_blank"

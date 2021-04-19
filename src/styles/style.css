@@ -653,8 +653,8 @@ ul li a{
   background-color: var(--primary-color);
   color: white;
   padding: 15px;
-  margin: 15px 30px 15px;
-  border-radius: 50px;
+  margin: 10px 20px 10px;
+  border-radius: 20px;
 }
 .resource-btn:hover {
   border: 2px solid var(--primary-color);
@@ -759,7 +759,7 @@ details > summary {
 }
 .team-container .team-card {
   /* flex: 1 0 auto; */
-  flex-basis: 15%;
+  flex-basis: 20%;
   text-align: center; 
   padding: 1rem 2rem;
   margin: 0 1rem 2rem;
@@ -768,13 +768,14 @@ details > summary {
 }
 .team-container .team-card .team-img {
   display: inline-block;
-  width: 120px;
-  height: 120px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 .team-container .team-card p {
+  margin-top: 15px;
   font-size: 15px;
 }

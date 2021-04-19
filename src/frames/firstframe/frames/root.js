@@ -36,12 +36,8 @@ export default class RootFirstFrame extends React.Component {
             InterSTEM Bowl is a unique STEM competition that allows students to
             showcase their creativity and test their knowledge in a variety of
             STEM fields. Over $1000 in cash prizes will be split between 15+
-            winners.{" "}
-            <a href="https://nahn5f40e7j.typeform.com/to/dbH76h3J">
-              Registriation{" "}
-            </a>{" "}
-            (also on login page) for InterSTEM Bowl is currently open. The
-            competition will be held in late March with the following
+            winners.{" "} Results and exams for the March 2021 competition are posted. {" "}
+            The competition will be held again in fall 2021 with the following
             categories:{" "}
           </p>
           <p>
@@ -58,79 +54,26 @@ export default class RootFirstFrame extends React.Component {
             {" "}
             - Writing category: an article submission on a designated prompt
             graded on content, writing style, and topic adherence
+            {" "}            
           </p>
         </section>
 
         <section className="c-paper c-paper--no-border-radius-bottom h-mb-0">
-        <h2 className="section-title">InterSTEM Bowl Committee</h2>
-        <div className="team-container">
-          <div className="team-card">
-            <div className="team-img" style={{backgroundImage: `url(${rLiu})`}}></div>
-            <p>Ryan Liu (Director)</p>
-          </div>
-          <div className="team-card">
-            <div className="team-img" style={{backgroundImage: `url(${cSong})`}}></div>
-            <p>Chris Song (Director)</p>
-          </div>
-          <div className="team-card">
-            <div className="team-img" style={{backgroundImage: `url(${mKim})`}}></div>
-            <p>Minseo Kim (Director)</p>
-          </div>
-        </div>
-        <div className="team-container">
-          <div className="team-card">
-            <div className="team-img" style={{backgroundImage: `url(${aJoo})`}}></div>
-            <p>Alyssa Joo (Biology)</p>
-          </div>
-          <div className="team-card">
-            <div className="team-img" style={{backgroundImage: `url(${aPan})`}}></div>
-            <p>Andrew Pan (Physics)</p>
-          </div>
-          <div className="team-card">
-            <div className="team-img" style={{backgroundImage: `url(${aLe})`}}></div>
-            <p>Anh-Thai Le (Comp Sci)</p>
-          </div>
-          <div className="team-card">
-            <div className="team-img" style={{backgroundImage: `url(${cDing})`}}></div>
-            <p>Caroline Ding (Biology)</p>
-          </div>
-          <div className="team-card">
-            <div className="team-img" style={{backgroundImage: `url(${cWang})`}}></div>
-            <p>Christal Wang (Biology)</p>
-          </div>
-          <div className="team-card">
-            <div className="team-img" style={{backgroundImage: `url(${cLi})`}}></div>
-            <p>Coco Li (Chemistry)</p>
-          </div>
-          <div className="team-card">
-            <div className="team-img" style={{backgroundImage: `url(${eCheng})`}}></div>
-            <p>Eric Cheng (Chemistry)</p>
-          </div>
-          <div className="team-card">
-            <div className="team-img" style={{backgroundImage: `url(${eHo})`}}></div>
-            <p>Eric Ho <br></br> (Comp Sci)</p>
-          </div>
-          <div className="team-card">
-            <div className="team-img" style={{backgroundImage: `url(${evCheng})`}}></div>
-            <p>Evien Cheng (Biology)</p>
-          </div>
-          <div className="team-card">
-            <div className="team-img" style={{backgroundImage: `url(${mShim})`}}></div>
-            <p>Minju Shim (Chemistry)</p>
-          </div>          
-          <div className="team-card">
-            <div className="team-img" style={{backgroundImage: `url(${sSowa})`}}></div>
-            <p>Sati Sowa (Chemistry)</p>
-          </div>
-          <div className="team-card">
-            <div className="team-img" style={{backgroundImage: `url(${sCao})`}}></div>
-            <p>Shirley Cao (Biology)</p>
-          </div>
-          <div className="team-card">
-            <div className="team-img" style={{backgroundImage: `url(${sYu})`}}></div>
-            <p>Skylar Yu <br></br> (Math)</p>
-          </div>
-        </div>
+          <h2 className="section-title">InterSTEM Bowl Directors</h2>
+          <div className="team-container">
+            <div className="team-card">
+              <div className="team-img" style={{backgroundImage: `url(${rLiu})`}}></div>
+              <p>Ryan Liu (Director)</p>
+            </div>
+            <div className="team-card">
+              <div className="team-img" style={{backgroundImage: `url(${cSong})`}}></div>
+              <p>Chris Song (Director)</p>
+            </div>
+            <div className="team-card">
+              <div className="team-img" style={{backgroundImage: `url(${mKim})`}}></div>
+              <p>Minseo Kim (Director)</p>
+            </div>
+          </div>        
         </section>
 
         <section className="c-paper colored-bg c-paper--no-border-radius-bottom h-mb-0" style={{backgroundColor: "var(--color-bg)"}}>
